@@ -1,9 +1,3 @@
-                          
-                           Group Number: 11
-                           Vipul Verma_2022577
-                           Aditya Yadav_2022041
-Readme Project_AP						
-
 JavaFX Application Structure : The code defines a JavaFX application named hello application. In JavaFX, applications are typically structured around the Application class, and the start  method is the entry point for the application.The application opens with a login screen allowing users to enter their credentials.Intro Audio: An introductory audio is played when the application starts.Inside the start method, a JavaFX  is created and initialised with the content loaded from an FXML file . The scene is then set on a JavaFX, which represents the main window of the application.Finally the application sets the title for the stage and makes the stage visible and displays the login screen.
 Assuming that thers as an fxml named helloview in the same package as the hello application class ,the project structure might look like this.
 
