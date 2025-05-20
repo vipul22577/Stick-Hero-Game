@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="507.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.apfinalproject.enterGameController">
+   <children>
+      <ImageView fitHeight="519.0" fitWidth="338.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/71TQoWHE8kL.png" />
+         </image></ImageView>
+      <ImageView fitHeight="67.0" fitWidth="75.0" layoutX="136.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/jungle.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="30.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/bhutiya.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="246.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/aqua.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="10.0" layoutY="9.0" mnemonicParsing="false" onAction="#getBackTolLoginScreen" text="Back" />
+      <Button blendMode="OVERLAY" cache="true" layoutX="110.0" layoutY="222.0" mnemonicParsing="false" onAction="#reloadgame" prefHeight="115.0" prefWidth="118.0" style="-fx-background-radius: 500; -fx-background-color: #FF0033;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect></Button>
+      <Label fx:id="lastccoreL" layoutX="89.0" layoutY="31.0" prefHeight="25.0" prefWidth="7.0" style="-fx-font-size: 30;" text="0">
+         <font>
+            <Font size="8.0" />
+         </font></Label>
+      <Label blendMode="DARKEN" layoutX="236.0" layoutY="16.0" prefHeight="25.0" prefWidth="67.0" text="  REWARDS" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <DropShadow />
+               </bumpInput>
+               <light>
+                  <Light.Spot>
+                     <color>
+                        <Color red="0.3302469253540039" green="0.9106996059417725" blue="1.0" />
+                     </color>
+                  </Light.Spot>
+               </light>
+            </Lighting>
+         </effect></Label>
+      <Label blendMode="MULTIPLY" contentDisplay="CENTER" layoutX="237.0" layoutY="54.0" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #FFFFFF;" text=" MAx Score" textAlignment="JUSTIFY">
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.5899999737739563" green="0.9648874402046204" blue="1.0" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Button layoutX="13.0" layoutY="423.0" mnemonicParsing="false" onAction="#bhutiyaenterTheGame" prefHeight="42.0" prefWidth="101.0" text="Bhutiya" />
+      <Button layoutX="127.0" layoutY="423.0" mnemonicParsing="false" onAction="#jungleenterTheGame" prefHeight="42.0" prefWidth="83.0" style="-fx-background-image: jungle.png;" text="Jungle">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.7183054685592651" green="0.6299999952316284" blue="1.0" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="234.0" layoutY="423.0" mnemonicParsing="false" onAction="#wateryaenterTheGame" opacity="0.63" prefHeight="42.0" prefWidth="83.0" text="Water" textOverrun="CENTER_ELLIPSIS">
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="17.25" surfaceScale="2.8">
+               <bumpInput>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="94.47" elevation="130.19">
+                     <color>
+                        <Color red="0.25909680128097534" green="0.7061132788658142" blue="0.9649122953414917" opacity="0.5400000214576721" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="RewardccoreL" contentDisplay="CENTER" layoutX="312.0" layoutY="8.0" prefHeight="27.0" prefWidth="17.0" text="0" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Label>
+      <Label fx:id="maxscoreL" layoutX="313.0" layoutY="47.0" prefHeight="25.0" prefWidth="17.0" text="0" textAlignment="JUSTIFY">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="45.0" text="LAST SCORE" />
+   </children>
+</AnchorPane>

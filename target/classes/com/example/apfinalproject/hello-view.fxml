@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="stackPane" prefHeight="437.0" prefWidth="557.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.apfinalproject.HelloController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <ImageView fitHeight="452.0" fitWidth="546.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../../images/openingScreen.jpg" />
+    </ImageView>
+   <Pane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <Button layoutX="199.0" layoutY="191.0" mnemonicParsing="false" onAction="#enterTheGame" prefHeight="63.0" prefWidth="148.0" style="-fx-font-size: 15;  -fx-background-color: FFFFFF;" text="Enter">
+            <font>
+               <Font name="Lucida Calligraphy Italic" size="12.0" />
+            </font>
+         </Button>
+         <Button layoutX="235.0" layoutY="363.0" mnemonicParsing="false" onAction="#exitTheGAme" prefHeight="24.0" prefWidth="78.0" style="-fx-background-color: FFFFFF;" text="exit" />
+      </children>
+   </Pane>
+
+    <StackPane.margin>
+        <Insets top="40.0" />
+    </StackPane.margin>
+</StackPane>

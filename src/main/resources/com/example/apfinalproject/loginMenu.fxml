@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cfb59f;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.apfinalproject.HelloController">
+   <children>
+      <ImageView fitHeight="585.0" fitWidth="776.0" layoutX="-176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/zimmer.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="242.0" layoutY="108.0" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: #00000; -fx-font-size: 15;" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="242.0" layoutY="181.0" prefHeight="37.0" prefWidth="102.0" style="-fx-border-radius: 10; -fx-font-size: 15;" text="password" textFill="WHITE" />
+      <TextField layoutX="352.0" layoutY="114.0" prefHeight="37.0" prefWidth="168.0" promptText="e.g stickeo" />
+      <TextField layoutX="352.0" layoutY="187.0" prefHeight="37.0" prefWidth="168.0" promptText="keep it strong" />
+      <Button layoutX="193.0" layoutY="303.0" mnemonicParsing="false" onAction="#backTOStartsreenFromLoginMenu" style="-fx-font-size: 20; -fx-background-color: #111111;" text="go back" textFill="WHITE" />
+      <Button layoutX="382.0" layoutY="297.0" mnemonicParsing="false" onAction="#moveTothemeSelctor" prefHeight="55.0" prefWidth="108.0" style="-fx-font-size: 20; -fx-background-color: #111111;" text="enter" textFill="WHITE" />
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>
